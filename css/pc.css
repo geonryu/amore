@@ -1,0 +1,152 @@
+@media all and (min-width: 1200px){
+    header .wrap{
+        height: 147px;
+        position: relative;
+        display: block;
+    }
+
+    header .wrap h1{
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .wrap h1 img{height: unset;}
+    header .wrap .btn-menu{display: none;}
+    header .wrap .btn-sns{display: none;}
+
+    header .wrap nav{
+        position: unset;
+        background-color: darkseagreen;
+        overflow-y: unset;
+        width: unset;
+        height: unset;
+        padding: 0;
+    }
+    header .wrap nav .btn-close{display: none;}
+
+    header .wrap .util{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    header .wrap nav .gnb{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 15px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .wrap nav .gnb > li{
+        height: unset;
+        margin-right: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    header .wrap nav .gnb > li:last-child{
+        margin-right: 0;
+    }
+    header .wrap nav .gnb > li a{
+        display: inline;
+    }
+    header .wrap nav .gnb > li:nth-child(1):hover{height: auto;}
+    header .wrap nav .gnb > li:nth-child(2):hover{height: auto;}
+    header .wrap nav .gnb > li:nth-child(3):hover{height: auto;}
+    header .wrap nav .gnb > li:nth-child(4):hover{height: auto;}
+
+    header .wrap nav .gnb > li:hover{
+        overflow: unset;
+    }
+
+    header .wrap nav .gnb > li::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #8e9996;
+        position: absolute;
+        top: calc(100% + 7px);
+        left: 0;
+        transition: width 0.4s;
+    }
+    header .wrap nav .gnb > li:hover::after{
+        width: 100%;
+    }
+
+    header .wrap nav .gnb > li:hover .sub{
+        opacity: 1;
+    }
+    header .wrap nav .gnb > li .sub{
+        transition: all 0.4s;
+        display: flex;
+        opacity: 0;/**/
+        background-color: rgba(0,0,0,0);
+        position: absolute;
+        top: 100%;
+        padding-top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        justify-content: center;
+    }
+
+    header .wrap nav .gnb > li .sub li{
+        margin: 0 15px;
+    }
+
+    .banner .pic{height: 600px;}
+    .banner .txt{
+        left: 60%;
+        top: 130px;
+    }
+
+    main{
+        padding: 50px 0 130px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .con3 .txt{
+        width: 418px;
+        height: 296px;
+    }
+
+    footer .wrap{
+        padding: 0;
+    }
+
+    footer .wrap .f-menu{
+        justify-content: flex-start;
+        width: 1000px
+    }
+
+    footer .wrap address{
+        display: flex;
+    }
+    footer .wrap p{
+        margin-right: 25px;
+    }
+
+    footer .wrap .select{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 210px;
+    }
+
+    footer .wrap .wa{
+        top: 0;
+        left: unset;
+        right: 50px;
+    }
+
+    footer .wrap .copy{
+        position: absolute;
+        top: 36px;
+        right: 200px;
+    }
+}
